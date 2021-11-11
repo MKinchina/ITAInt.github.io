@@ -4,21 +4,51 @@ html, body {
     height: 100%;
 }
 
+p, div {
+    margin: 0px;
+}
+
 header {
-    background-color: goldenrod;
-    width: 100%;
-    height: 20%;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(242, 189, 65);;
+    width: 100%;
+    height: 20%;
 }
 
 .info {
-    width: 80%;
-    height: 10%;
+    width: 90%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .menu {
-    background-color: darkblue;
-    width: 80%;
-    height: 10%;
+    background-color: rgb(2, 12, 56);;
+    width: 90%;
+    height: 50%;
+}
+
+.logo {
+    font-size: 60px;
+    font-weight: bold;
+    color: rgb(2, 12, 56);
+}
+
+.icon {
+    float: left;
+    height: 35px;
+    width: 35px;
+}
+
+.hour, .tel, .email {
+    padding-left: 50px;
+    color: rgb(2, 12, 56);
+}
+
+.big {
+    font-size: 20px;
 }
