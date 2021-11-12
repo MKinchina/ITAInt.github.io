@@ -5,7 +5,7 @@ html, body {
     font-family: 'Poppins', sans-serif;
 }
 
-p, div {
+p, div, h1 {
     margin: 0px;
 }
 
@@ -21,7 +21,7 @@ header {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(230, 180, 0);
+    background-color: rgb(253, 191, 48);
     width: 100%;
     height: 20%;
 }
@@ -35,7 +35,7 @@ header {
 }
 
 .menu {
-    background-color: rgb(2, 12, 56);
+    background-color: rgb(1, 1, 26);
     width: 90%;
     height: 50%;
     display: flex;
@@ -46,8 +46,7 @@ header {
 .logo {
     width: 25%;
     font-size: 60px;
-    font-weight: bold;
-    color: rgb(2, 12, 56);
+    color: rgbrgb(1, 1, 26);
     letter-spacing: 2px;
 }
 
@@ -59,7 +58,7 @@ header {
 
 .hour, .tel, .email {
     padding-left: 70px;
-    color: rgb(2, 12, 56);
+    color: rgb(1, 1, 26);
 }
 
 .big {
@@ -77,10 +76,23 @@ header {
     align-items: center;
     width: 45%;
     text-transform: uppercase;
+    padding: 0px;
+}
+
+.links li {
+    position: relative;
+}
+
+.links>li:hover {
+    color: rgb(253, 191, 48);
+}
+
+.links>li:hover .submenu {
+    display: block;
 }
 
 .home {
-    color: rgb(230, 180, 0);
+    color: rgb(253, 191, 48);
 }
 
 .button {
@@ -91,40 +103,35 @@ header {
 
 .quote {
     padding: 5px 10px;
-    background-color: rgb(2, 12, 56);
+    background-color: rgb(1, 1, 26);
     border: 3px solid white;
     color: white;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     letter-spacing: 1px;
 }
+
+.quote:hover {
+    background-color: rgb(253, 191, 48);
+    color: rgb(1, 1, 26);
+    font-size: 18px;
+    letter-spacing: 1px;
+}
  
-.menulist li {
-    position: relative;
-}
-
-.menulist {
-    padding: 0px;
-}
-
-.menulist>li:hover .submenulist {
-    display: block;
-}
-
-.submenulist {
+.submenu {
     position: absolute;
     display: none;
     left: 0px;
     padding: 10px 5px 0px 5px;
-    background-color: rgb(2, 12, 56);
+    background-color: rgb(1, 1, 26);
     color: white;
 }
 
-.submenulist li {
+.submenu li {
     text-transform: capitalize;
 }
 
-.pages {
+.sublinks {
     display: flex;
     justify-content: flex-start;
     padding-top: 10px;
@@ -134,8 +141,12 @@ header {
     width: 30px;
     height: 30px;
     padding-right: 10px;
+    cursor: auto;
 }
 
-.slider, .slider_img {
-    width: 100%;
+/* Header end. */
+/* Content start */
+
+{
+    
 }
