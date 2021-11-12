@@ -2,10 +2,18 @@ html, body {
     margin: 0px;
     width: 100%;
     height: 100%;
+    font-family: 'Poppins', sans-serif;
 }
 
 p, div {
     margin: 0px;
+}
+
+a, button, li {
+    text-decoration: none;
+    cursor: pointer;
+    list-style: none;
+    color: unset;
 }
 
 header {
@@ -13,7 +21,7 @@ header {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(242, 189, 65);;
+    background-color: rgb(230, 180, 0);
     width: 100%;
     height: 20%;
 }
@@ -27,28 +35,86 @@ header {
 }
 
 .menu {
-    background-color: rgb(2, 12, 56);;
+    background-color: rgb(2, 12, 56);
     width: 90%;
     height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .logo {
+    width: 25%;
     font-size: 60px;
     font-weight: bold;
     color: rgb(2, 12, 56);
+    letter-spacing: 2px;
 }
 
 .icon {
     float: left;
-    height: 35px;
-    width: 35px;
+    height: 50px;
+    width: 50px;
 }
 
 .hour, .tel, .email {
-    padding-left: 50px;
+    padding-left: 70px;
     color: rgb(2, 12, 56);
 }
 
 .big {
-    font-size: 20px;
+    font-size: 16px;
+}
+
+.small {
+    font-size: 13px;
+}
+
+.links {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    width: 45%;
+    text-transform: uppercase;
+}
+
+.home {
+    color: rgb(230, 180, 0);
+}
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+    width: 45%;
+}
+
+.quote {
+    padding: 5px 10px;
+    background-color: rgb(2, 12, 56);
+    border: 3px solid white;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+ 
+.menulist li {
+    position: relative;
+}
+
+.menulist>li:hover .submenulist {
+    display: block;
+}
+
+.submenulist {
+    position: absolute;
+    display: none;
+    left: 0px;
+    padding: 10px 5px 0px 5px;
+    background-color: rgb(2, 12, 56);
+    color: white;
+    width: 140px;
+}
+.submenulist li {
+    text-transform: lowercase;
 }
