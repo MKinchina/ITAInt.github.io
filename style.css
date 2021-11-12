@@ -74,6 +74,7 @@ header {
     display: flex;
     color: white;
     justify-content: space-between;
+    align-items: center;
     width: 45%;
     text-transform: uppercase;
 }
@@ -102,6 +103,10 @@ header {
     position: relative;
 }
 
+.menulist {
+    padding: 0px;
+}
+
 .menulist>li:hover .submenulist {
     display: block;
 }
@@ -113,8 +118,24 @@ header {
     padding: 10px 5px 0px 5px;
     background-color: rgb(2, 12, 56);
     color: white;
-    width: 140px;
 }
+
 .submenulist li {
-    text-transform: lowercase;
+    text-transform: capitalize;
+}
+
+.pages {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 10px;
+}
+
+.social {
+    width: 30px;
+    height: 30px;
+    padding-right: 10px;
+}
+
+.slider, .slider_img {
+    width: 100%;
 }
