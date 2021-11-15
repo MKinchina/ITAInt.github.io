@@ -1,11 +1,12 @@
 html, body {
     margin: 0px;
+    padding: 0px;
     width: 100%;
     height: 100%;
     font-family: 'Poppins', sans-serif;
 }
 
-p, div, h1 {
+p, div, h1, h2, h3 {
     margin: 0px;
 }
 
@@ -15,6 +16,8 @@ a, button, li {
     list-style: none;
     color: unset;
 }
+
+/* Header star. */
 
 header {
     display: flex;
@@ -35,7 +38,7 @@ header {
 }
 
 .menu {
-    background-color: rgb(1, 1, 26);
+    background-color: rgb(0, 6, 34);
     width: 90%;
     height: 50%;
     display: flex;
@@ -46,7 +49,7 @@ header {
 .logo {
     width: 25%;
     font-size: 60px;
-    color: rgbrgb(1, 1, 26);
+    color: rgb(0, 6, 34);
     letter-spacing: 2px;
 }
 
@@ -58,7 +61,7 @@ header {
 
 .hour, .tel, .email {
     padding-left: 70px;
-    color: rgb(1, 1, 26);
+    color: rgb(0, 6, 34);
 }
 
 .big {
@@ -103,7 +106,7 @@ header {
 
 .quote {
     padding: 5px 10px;
-    background-color: rgb(1, 1, 26);
+    background-color: rgb(0, 6, 34);
     border: 3px solid white;
     color: white;
     font-family: 'Poppins', sans-serif;
@@ -113,7 +116,7 @@ header {
 
 .quote:hover {
     background-color: rgb(253, 191, 48);
-    color: rgb(1, 1, 26);
+    color: rgb(0, 6, 34);
     font-size: 18px;
     letter-spacing: 1px;
 }
@@ -123,7 +126,7 @@ header {
     display: none;
     left: 0px;
     padding: 10px 5px 0px 5px;
-    background-color: rgb(1, 1, 26);
+    background-color: rgb(0, 6, 34);
     color: white;
 }
 
@@ -144,9 +147,185 @@ header {
     cursor: auto;
 }
 
-/* Header end. */
-/* Content start */
+/* End of header. */
+/* Start of content. The first section*/
 
-{
-    
+
+.slider {
+    width: 100%;
+    height: 80%;
+    position: relative;
 }
+
+.slider>img {
+    width: 100%;
+    height: 100%;
+}
+
+.slider_text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.block1 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.block2 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.first_line {
+    font-size: 35px;
+    color: white;
+    text-transform: capitalize;
+}
+
+.second_line {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-weight: bold; 
+    text-transform: capitalize;
+}
+
+.second_line>span {
+    font-size: 40px;
+    opacity: 0.4;
+}
+
+.second_line>span:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.second_line>h1 {
+    font-size: 55px;
+    letter-spacing: 2px;
+}
+
+.third_line {
+    background-color: unset;
+    border: 2px solid white;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 20px 20px;
+    margin: 20px 0px 0px 0px;
+}
+
+.third_line:hover {
+    background-color: rgb(253, 191, 48);
+    color: rgb(0, 6, 34);
+}
+
+.fourth_line>a {
+    font-size: 60px;
+    color: white;
+    opacity: 0.6;
+    line-height: 40px;
+}
+
+.fourth_line>a:hover {
+    opacity: 1;
+}
+
+/*End of the first section.
+Start of the second section */
+
+.benefits {
+    height: 30%;
+    display: flex;
+}
+
+.benefit {
+    display: flex;
+    align-items: center;
+    background-color: rgb(253, 191, 48);
+    color: rgb(0, 6, 34);
+}
+
+.benefit:first-of-type,
+.benefit:last-of-type {
+    background-color: rgb(0, 6, 34);
+    color: rgb(253, 191, 48);
+}
+
+.benefit>img {
+    height: 80px;
+    width: 80px;
+    padding: 15px 20px 15px 30px;
+}
+
+.description>h2 {
+    margin-bottom: 10px;
+}
+
+.description>p {
+    font-size: 18px;
+}
+
+/*End of the second section.
+Start of the tird section */
+
+.about {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about>img {
+    height: 80%;
+    padding-right: 30px;
+}
+
+.text_about {
+    width: 55%;
+}
+
+.text_about>span {
+    color: rgb(253, 191, 48);
+    font-weight: bold;
+}
+
+.text_about>h3 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.text_about>p {
+    margin-bottom: 10px;
+}
+
+.text_about>a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(253, 191, 48);
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+.text_about>a:hover {
+    background-color: rgb(0, 6, 34);
+    color: rgb(253, 191, 48);
+}
+
+/*End of the third section.
+Start of the fourth section */
