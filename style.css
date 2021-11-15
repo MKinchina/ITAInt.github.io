@@ -6,7 +6,7 @@ html, body {
     font-family: 'Poppins', sans-serif;
 }
 
-p, div, h1, h2, h3 {
+p, div, h1, h2, h3, h4 {
     margin: 0px;
 }
 
@@ -282,16 +282,22 @@ Start of the second section */
 }
 
 /*End of the second section.
-Start of the tird section */
+Start of the third section */
 
 .about {
-    height: 80%;
+    height: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
 }
 
-.about>img {
+.main_about {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_about>img {
     height: 80%;
     padding-right: 30px;
 }
@@ -327,5 +333,214 @@ Start of the tird section */
     color: rgb(253, 191, 48);
 }
 
+.facts {
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.dark_side {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(0, 6, 34);
+    color: rgb(253, 191, 48);
+}
+
+.color_side {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(253, 191, 48);
+    color: rgb(0, 6, 34);
+}
+
+.fact>img {
+    height: 60px;
+    width: 60px;
+}
+
+.fact {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text_fact>p:first-of-type {
+    font-size: 30px;
+}
+
+.text_fact>p:last-of-type {
+    text-transform: uppercase;
+}
+
+.dark_side>.fact>.text_fact>p:last-of-type {
+    margin-right: 50px;
+}
+
 /*End of the third section.
 Start of the fourth section */
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headline>h4 {
+    color: rgb(253, 191, 48);
+    text-align: center;
+    margin-top: 80px;
+}
+
+.headline>h3 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.service_list {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2vw;
+    margin-bottom: 80px;
+}
+.service_list>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service_name {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service_name>p {
+    width: 80%;
+    background-color: rgb(0, 6, 34);
+    color: rgb(253, 191, 48);
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    padding: 16px;
+}
+
+.service_name>button {
+    width: 20%;
+    color: rgb(0, 6, 34);
+    background-color: rgb(253, 191, 48);
+    font-size: 50px;
+    border: 3px solid rgb(253, 191, 48);
+}
+
+.play_button {
+    width: 70px;
+    height: 70px;
+    border-radius: 50% 50%;
+    padding: 10px;
+    box-shadow: inset 0 0 10px 3px rgb(253, 191, 48);
+    border: 1px solid rgb(253, 191, 48);
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.play_button:hover{
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+
+/*End of the fourth section.
+Start of the fifth section */
+
+.team {
+    height: 170%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.team_about {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2vw;
+}
+
+.team_data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.team_data>p:first-of-type {
+    background-color: rgb(0, 6, 34);
+    color: rgb(253, 191, 48);
+    text-align: center;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.team_data>p:last-of-type {
+    background-color: rgb(0, 6, 34);
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+.questions {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.question_blocks {
+    width: 80%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.question_list {
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.question_list>div{
+    width: 80%;
+    border: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.question_list>div>a {
+    color: rgb(253, 191, 48);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.question_list:not(.question_list:last-of-type) {
+    border-right: 1px solid rgb(253, 191, 48);
+}
