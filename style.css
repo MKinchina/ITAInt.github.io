@@ -256,6 +256,7 @@ Start of the second section */
 }
 
 .benefit {
+    height: 100%;
     display: flex;
     align-items: center;
     background-color: rgb(253, 191, 48);
@@ -286,9 +287,11 @@ Start of the second section */
 Start of the third section */
 
 .about {
-    height: 100%;
+    height: 75%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .main_about {
@@ -334,8 +337,11 @@ Start of the third section */
     color: rgb(253, 191, 48);
 }
 
+/*End of the third section.
+Start of the fourth section */
+
 .facts {
-    height: 20%;
+    height: 25%;
     display: flex;
     align-items: center;
 }
@@ -384,8 +390,8 @@ Start of the third section */
     margin-right: 50px;
 }
 
-/*End of the third section.
-Start of the fourth section */
+/*End of the fourth section.
+Start of the fifth section */
 
 .services {
     display: flex;
@@ -393,15 +399,17 @@ Start of the fourth section */
     align-items: center;
 }
 
+.headline {
+    height: 20%;
+}
+
 .headline>h4 {
     color: rgb(253, 191, 48);
     text-align: center;
-    margin-top: 80px;
 }
 
 .headline>h3 {
     font-size: 50px;
-    margin-bottom: 30px;
     text-align: center;
 }
 
@@ -424,16 +432,15 @@ Start of the fourth section */
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(0, 6, 34);
 }
 
 .service_name>p {
     width: 80%;
-    background-color: rgb(0, 6, 34);
     color: rgb(253, 191, 48);
     font-size: 22px;
     font-weight: bold;
     text-align: center;
-    padding: 16px;
 }
 
 .service_name>button {
@@ -444,6 +451,21 @@ Start of the fourth section */
     border: 3px solid rgb(253, 191, 48);
 }
 
+/*End of the fifth section.
+Start of the sixth section */
+
+.video_part {
+    height: 60%;
+    width: 100%;
+}
+
+.video {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .play_button {
     width: 70px;
     height: 70px;
@@ -451,8 +473,6 @@ Start of the fourth section */
     padding: 10px;
     box-shadow: inset 0 0 10px 3px rgb(253, 191, 48);
     border: 1px solid rgb(253, 191, 48);
-    margin-top: 150px;
-    margin-bottom: 150px;
 }
 
 .play_button:hover{
@@ -461,15 +481,15 @@ Start of the fourth section */
     cursor: pointer;
 }
 
-/*End of the fourth section.
-Start of the fifth section */
+/*End of the sixth section.
+Start of the seventh section */
 
 .team {
-    height: 170%;
+    height: 80%;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -503,12 +523,15 @@ Start of the fifth section */
     padding: 5px;
 }
 
+/*End of the seventh section.
+Start of the eights section */
+
 .questions {
     height: 80%;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -547,12 +570,12 @@ Start of the fifth section */
     border-right: 1px solid rgb(253, 191, 48);
 }
 
-/*End of the fifth section.
-Start of the sixth section */
+/*End of the eights section.
+Start of the ninth section */
 
 .customers {
     width: 100%;
-    height: 60%;
+    height: 70%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -596,14 +619,23 @@ Start of the sixth section */
     width: 50%;
 }
 
-/*End of the sixth section.
+/*End of the ninth section.
 Start of the last one section */
 
+.blog {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .blog_articles {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 2vw;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .blog_articles>div {
@@ -611,18 +643,25 @@ Start of the last one section */
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 80%;
+}
+
+.blog_articles>div>img {
+    width: 80%;
+    height: 60%;
 }
 
 .article_name {
-    width: 100%;
+    width: 80%;
+    height: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(0, 6, 34);
 }
 
 .article_name>p {
     width: 80%;
-    background-color: rgb(0, 6, 34);
     color: rgb(253, 191, 48);
     font-size: 18px;
     font-weight: bold;
@@ -633,6 +672,34 @@ Start of the last one section */
     width: 20%;
     color: rgb(0, 6, 34);
     background-color: rgb(253, 191, 48);
-    font-size: 30px;
+    font-size: 35px;
     border: 3px solid rgb(253, 191, 48);
+    padding: 0px;
+}
+
+.sub {
+    width: 80%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(243, 246, 255);;
+    position: relative;
+}
+
+.sub>p {
+    width: 90%;
+    text-align: center;
+    font-size: 14px;
+}
+
+.line::after {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 1px;
+    top: 30%;
+    right: 35%;
+    background: #fdbe33;
 }
