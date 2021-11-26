@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"></head>
+    <title>Builderz</title>
 <body>
     <header>
         <div class="info">
@@ -16,21 +17,21 @@
             </div>
             <div class="main_contacts">
                 <div class="icon">
-                    <img src="/img/work.png" alt="">
+                    <img src="img/work.png" alt="">
                     <div class="hour">
                         <p class="big">Opening Hour</p>
                         <p class="small">Mon - Fry, 9.00 - 20.00</p>
                     </div>
                 </div>
                 <div class="icon">
-                    <img src="/img/smartphone.png" alt="">
+                    <img src="img/smartphone.png" alt="">
                     <div class="tel">
                         <p class="big">Call Us</p>
                         <p class="small">+2 498 394 93 93</p>
                     </div>
                 </div>
                 <div class="icon">
-                    <img src="/img/email.png" alt="">
+                    <img src="img/email.png" alt="">
                     <div class="email">
                         <p class="big">Email Us</p>
                         <p class="small">info@builderz.com</p>
@@ -39,54 +40,69 @@
             </div>
         </div>
         <nav class="menu">
-            <ul class="links">
-                <li> <a class="home" href="."> Home</a></li>
-                <li><a>About</a></li>
-                <li><a>Service</a></li>
-                <li><a>Team</a></li>
-                <li><a>Project</a></li>
-                <li>
-                    <a>Pages</a>
-                    <span>▿</span>
-                    <ul class="submenu">
-                        <li>
-                            <div class="sublinks">
-                                <img class="social" src="img/instagram.png" alt="">
-                                <a href="">Instagram</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="sublinks">
-                                <img class="social" src="img/twitter.png" alt="">
-                                <a href="">Twitter</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="sublinks">
-                                <img class="social" src="img/facebook.png" alt="">
-                                <a href="">Facebook</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="sublinks">
-                                <img class="social" src="img/youtube.png" alt="">
-                                <a href="">Youtube</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="sublinks">
-                                <img class="social" src="img/telegram.png" alt="">
-                                <a href="">Telegramm</a>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-                <li><a>Contacts</a></li>
-            </ul>
-            <div class="button">
-                <button class="quote">
-                    Get A Quote
-                </button>
+            <div>
+                <ul class="adaptive_menu">
+                    <li>
+                        <a class="phone_menu">MENU<span class="adaptive_arrow"></span>
+                        </a>
+                        <ul class="submenu_adaptiv">
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#service">Service</a></li>
+                            <li><a href="#team">Team</a></li>
+                            <li><a href="#project">Project</a></li>
+                            <li><a href="#contact">Contacts</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="links">
+                    <li> <a class="home" href="."> Home</a></li>
+                    <li> <a href="#about">About</a></li>
+                    <li> <a href="#service">Service</a></li>
+                    <li> <a href="#team">Team</a></li>
+                    <li> <a href="#project">Project</a></li>
+                    <li>
+                        <a>Pages</a>
+                        <span>⮟</span>
+                        <ul class="submenu">
+                            <li>
+                                <div class="sublinks">
+                                    <img class="social" src="img/instagram.png" alt="">
+                                    <a href="">Instagram</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="sublinks">
+                                    <img class="social" src="img/twitter.png" alt="">
+                                    <a href="">Twitter</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="sublinks">
+                                    <img class="social" src="img/facebook.png" alt="">
+                                    <a href="">Facebook</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="sublinks">
+                                    <img class="social" src="img/youtube.png" alt="">
+                                    <a href="">Youtube</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="sublinks">
+                                    <img class="social" src="img/telegram.png" alt="">
+                                    <a href="">Telegramm</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a>Contacts</a></li>
+                </ul>
+                <div class="button">
+                    <button class="quote">
+                        Get A Quote
+                    </button>
+                </div>
             </div>
         </nav>
     </header>
@@ -131,7 +147,7 @@
             </div>
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <div class="main_about">
             <img src="img/about1.jpg" alt="">
             <div class="text_about">
@@ -177,7 +193,7 @@
             </div>
         </div>
     </section>
-    <section class="services">
+    <section class="services" id="service">
         <div class="headline">
             <h4>Our services</h4>
             <h3>We Provide Services</h3>
@@ -236,7 +252,7 @@
             <img class="play_button" src="img/play.png" alt="">
         </div>
     </section>
-    <section class="team">
+    <section class="team" id="team">
         <div class="headline">
             <h4>Our team</h4>
             <h3>Meet Our Engineer</h3>
@@ -319,17 +335,19 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea deserunt cupiditate nobis magnam corporis sunt fugit ipsam molestias exercitationem ullam!
         </div>
     </section>
-    <section class="blog">
+    <section class="blog" id="project">
         <div class="headline">
             <h4>Latest Blog</h4>
             <h3>Latest From Our Blog</h3>
         </div>
         <div class="blog_articles">
             <div>
-                <img src="img/blog-1.jpg" alt="">
-                <div class="article_name">
-                    <p>Lorem ipsum dolor sit.</p>
-                    <button>+</button>
+                <div class="img_part">
+                    <img src="img/blog-1.jpg" alt="">
+                    <div class="article_name">
+                        <p>Lorem ipsum dolor sit.</p>
+                        <button>+</button>
+                    </div>
                 </div>
                 <div class="sub">
                     <p class="line"><i>By</i> admin <i>in</i> Construction</p>
@@ -337,10 +355,12 @@
                 </div>
             </div>
             <div>
-                <img src="img/blog-2.jpg" alt="">
-                <div class="article_name">
-                    <p>Lorem ipsum dolor sit.</p>
-                    <button>+</button>
+                <div class="img_part">
+                    <img src="img/blog-2.jpg" alt="">
+                    <div class="article_name">
+                        <p>Lorem ipsum dolor sit.</p>
+                        <button>+</button>
+                    </div>
                 </div>
                 <div class="sub">
                     <p class="line"><i>By</i> admin <i>in</i> Construction</p>
@@ -348,10 +368,12 @@
                 </div>
             </div>
             <div>
-                <img src="img/blog-3.jpg" alt="">
-                <div class="article_name">
-                    <p>Lorem ipsum dolor sit.</p>
-                    <button>+</button>
+                <div class="img_part">
+                    <img src="img/blog-3.jpg" alt="">
+                    <div class="article_name">
+                        <p>Lorem ipsum dolor sit.</p>
+                        <button>+</button>
+                    </div>
                 </div>
                 <div class="sub">
                     <p class="line"><i>By</i> admin <i>in</i> Construction</p>
