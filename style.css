@@ -35,7 +35,7 @@ header {
     justify-content: space-around;
     align-items: center;
     background-color: rgb(253, 191, 48);
-    width: 100vw;
+    width: 100%;
     height: 20vh;
 }
 
@@ -49,8 +49,8 @@ header {
 
 .menu {
     background-color: rgb(0, 6, 34);
-    width: 90%;
-    height: 50%;
+    width: 90vw;
+    height: 10vmax;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -204,7 +204,7 @@ header {
     display: none;
 }
 
-.adaptive_menu>li:hover,  {
+.adaptive_menu>li:hover {
     color: rgb(253, 191, 48);
 }
 
@@ -212,69 +212,8 @@ header {
     color: rgb(253, 191, 48);
 }
 
-@media screen and (max-width: 1124px) {
-    .hour, .tel, .email {
-        display: none;
-    }
-    .main_contacts {
-        justify-content: space-evenly;
-        width: 40%;
-    }
-}
-
-@media screen and (max-width: 790px) {
-    .info {
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        height: 60%;
-    }
-
-    .logo {
-        width: 100%;
-        text-align: center;
-    }
-
-    .icon {
-        display: none;    
-    }
-
-    .menu {
-        width: 100%;
-        height: 40%;
-    }
-
-    .adaptive_menu {
-        display: block;
-    }
-
-    .adaptive_menu>li {
-        position: relative;
-    }
-
-    .adaptive_menu>li:hover .submenu_adaptiv {
-        display: block;
-    }
-
-    .links {
-        display: none;
-    }
-
-    .submenu_adaptiv {
-        width: 150px;
-        position: absolute;
-        display: none;
-        left: 0px;
-        padding: 10px 5px 0px 5px;
-        background-color: rgb(0, 6, 34);
-        color: white;
-        border: 1px solid rgb(0, 6, 34);
-        border-radius: 10% 10%;    
-    }
-}
-
 /* End of header. */
-/* Start of content. The first section*/
+/* Start of the Slider's section.*/
 
 .slider {
     background-image: url(img/carousel-31.jpg);
@@ -367,8 +306,8 @@ header {
     opacity: 1;
 }
 
-/*End of the first section.
-Start of the second section */
+/*End of the Slider's section.
+Start of the section benefits. */
 
 .benefits {
     width: 100%;
@@ -417,19 +356,8 @@ Start of the second section */
     font-size: 18px;
 }
 
-@media screen and (max-width:970px) { 
-    .benefits {
-        flex-wrap: wrap;
-        height: auto;
-    }
-
-    .benefit {
-        width: 100%;
-    }
-}
-
-/*End of the second section.
-Start of the third section */
+/*End of the section benefits.
+Start of the section about*/
 
 .about {
     min-height: 75%;
@@ -487,43 +415,8 @@ Start of the third section */
     color: rgb(253, 191, 48);
 }
 
-@media screen and (max-width: 1124px) {
-    .main_about {
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;        
-    }
-
-    .main_about>img {
-        height: auto;
-        max-width: 80%;
-        padding-right: 20px;
-        display: block;
-    }
-    
-    .text_about {
-        max-width: 95%;
-     }
-     
-}
-@media screen and (max-width: 326px) {
-
-    .logo {
-        font-size: 50px;
-    }
-
-    .text_about>h3, .first_line {
-       font-size: 30px;
-    }   
-
-    .second_line>h1 {
-        font-size: 40px;
-    }
-
-}
-
-/*End of the third section.
-Start of the fourth section */
+/*End of the section about.
+Start of the section facts"*/
 
 .facts {
     height: 25%;
@@ -574,27 +467,8 @@ Start of the fourth section */
     text-transform: uppercase;
 }
 
-@media screen and (max-width: 760px) {
-    .facts {
-        flex-wrap: wrap;
-        height: auto;
-    }
-
-    .dark_side, .color_side {
-        width: 100%;
-        padding: 40px 0px 40px 0px;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .fact {
-        flex-wrap: wrap;
-        text-align: center;
-    }
-}
-
-/*End of the fourth section.
-Start of the fifth section */
+/*End of the section facts.
+Start of the section services.*/
 
 .services {
     min-height: 150%;
@@ -686,20 +560,8 @@ Start of the fifth section */
     border: 1px solid rgb(0, 6, 34);
 }
 
-@media screen and (max-width: 1000px) {
-    .service_block {
-        flex-wrap: wrap;
-    }
-    
-    .services {
-        height: auto;
-        width: 100%;
-        padding-top: 40px;
-    }
-}
-
-/*End of the fifth section.
-Start of the sixth section */
+/*End of the section services.
+Start of the video's section*/
 
 .video_part {
     height: 60%;
@@ -729,8 +591,8 @@ Start of the sixth section */
     cursor: pointer;
 }
 
-/*End of the sixth section.
-Start of the seventh section */
+/*End of the video's section.
+Start of the team's section */
 
 .team {
     min-height: 90%;
@@ -779,8 +641,8 @@ Start of the seventh section */
     padding: 5px;
 }
 
-/*End of the seventh section.
-Start of the eights section */
+/*End of the team's section.
+Start of the section questions*/
 
 .questions {
     height: 80%;
@@ -829,30 +691,8 @@ Start of the eights section */
     border-right: 2px solid rgb(253, 191, 48);
 }
 
-@media screen and (max-width: 760px) {
-
-    .questions {
-        height: auto;
-        padding: 40px 0px 40px 0px;
-    }
-
-    .question_blocks {
-        flex-direction: column;
-    }  
-    
-    .question_list:not(.question_list:last-of-type) {
-        border-right: unset;
-    }
-    
-
-    .question_list>div {
-        margin-bottom: 10px;
-    }
-    
-}
-
-/*End of the eights section.
-Start of the ninth section */
+/*End of the section questions.
+Start of the section customers*/
 
 .customers {
     width: 100%;
@@ -910,24 +750,8 @@ Start of the ninth section */
     padding-bottom: 10px;
 }
 
-@media screen and (max-width: 460px) {
-
-    .customers_photo>img:first-of-type, .customers_photo>img:last-of-type {
-        display: none;
-    }
-
-    .customers_photo {
-        height: 300px;
-        width: 200px;
-    }
-
-    .main_photo {
-        transform: translate(0%, 30%);
-    }       
-}
-
-/*End of the ninth section.
-Start of the last one section */
+/*End of the section customers.
+Start of the blog's section */
 
 .blog {
     width: 100%;
@@ -1043,8 +867,8 @@ Start of the last one section */
     position: relative;
 }
 
-/* The end of the last one section.
-Starp of the footer part */
+/* The end of the blog's section.
+Starp of the footer*/
 
 footer {
     width: 100%;
@@ -1237,7 +1061,184 @@ footer>div {
     font-weight: bold;
 }
 
-@media screen and (max-width:530px) {
+/* End of the footer.
+ */
+
+@media (max-width: 1124px) {
+    .hour, .tel, .email {
+        display: none;
+    }
+    .main_contacts {
+        justify-content: space-evenly;
+        width: 40%;
+    }
+}
+
+@media (max-width: 790px) {
+    .info {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 60%;
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .icon {
+        display: none;    
+    }
+
+    .menu {
+        width: 100%;
+        height: 40%;
+    }
+
+    .adaptive_menu {
+        display: block;
+    }
+
+    .adaptive_menu>li {
+        position: relative;
+    }
+
+    .adaptive_menu>li:hover .submenu_adaptiv {
+        display: block;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .submenu_adaptiv {
+        width: 150px;
+        position: absolute;
+        display: none;
+        left: 0px;
+        padding: 10px 5px 0px 5px;
+        background-color: rgb(0, 6, 34);
+        color: white;
+        border: 1px solid rgb(0, 6, 34);
+        border-radius: 10% 10%;    
+    }
+}
+
+@media (max-width:970px) { 
+    .benefits {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .benefit {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1124px) {
+    .main_about {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;        
+    }
+
+    .main_about>img {
+        height: auto;
+        max-width: 80%;
+        padding-right: 20px;
+        display: block;
+    }
+    
+    .text_about {
+        max-width: 95%;
+     } 
+}
+
+@media (max-width: 760px) {
+    .facts {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .dark_side, .color_side {
+        width: 100%;
+        padding: 40px 0px 40px 0px;
+    }
+}
+
+@media (max-width: 400px) {
+    .fact {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 326px) {
+
+    .logo {
+        font-size: 50px;
+    }
+
+    .text_about>h3, .first_line {
+       font-size: 30px;
+    }   
+
+    .second_line>h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .service_block {
+        flex-wrap: wrap;
+    }
+    
+    .services {
+        height: auto;
+        width: 100%;
+        padding-top: 40px;
+    }
+}
+
+@media (max-width: 760px) {
+    
+    .questions {
+        height: auto;
+        padding: 40px 0px 40px 0px;
+    }
+
+    .question_blocks {
+        flex-direction: column;
+    }  
+    
+    .question_list:not(.question_list:last-of-type) {
+        border-right: unset;
+    }
+    
+
+    .question_list>div {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 460px) {
+
+    .customers_photo>img:first-of-type, .customers_photo>img:last-of-type {
+        display: none;
+    }
+
+    .customers_photo {
+        height: 300px;
+        width: 200px;
+    }
+
+    .main_photo {
+        transform: translate(0%, 30%);
+    }       
+}
+
+@media (max-width:530px) {
     .options {
         flex-direction: column;
         justify-content: space-evenly;
