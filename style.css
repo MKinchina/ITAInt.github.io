@@ -1071,10 +1071,36 @@ footer>div {
     .hour, .tel, .email {
         display: none;
     }
+
+    .info {
+        min-height: 5vmax;
+    }
+
+    .menu {
+        min-height: 5vmax;
+    }
+
     .main_contacts {
         justify-content: space-evenly;
         width: 40%;
     }
+
+    .main_about {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;        
+        }
+    
+    .main_about>img {
+        height: auto;
+        max-width: 80%;
+        padding-right: 20px;
+        display: block;
+    }
+        
+    .text_about {
+        max-width: 95%;
+    }     
 }
 
 @media (max-width: 790px) {
@@ -1139,25 +1165,6 @@ footer>div {
     }
 }
 
-@media (max-width: 1124px) {
-    .main_about {
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;        
-    }
-
-    .main_about>img {
-        height: auto;
-        max-width: 80%;
-        padding-right: 20px;
-        display: block;
-    }
-    
-    .text_about {
-        max-width: 95%;
-     } 
-}
-
 @media (max-width: 760px) {
     .facts {
         flex-wrap: wrap;
@@ -1167,6 +1174,24 @@ footer>div {
     .dark_side, .color_side {
         width: 100%;
         padding: 40px 0px 40px 0px;
+    }
+
+    .questions {
+        height: auto;
+        padding: 40px 0px 40px 0px;
+    }
+
+    .question_blocks {
+        flex-direction: column;
+    }  
+    
+    .question_list:not(.question_list:last-of-type) {
+        border-right: unset;
+    }
+    
+
+    .question_list>div {
+        margin-bottom: 10px;
     }
 }
 
@@ -1178,7 +1203,6 @@ footer>div {
 }
 
 @media screen and (max-width: 326px) {
-
     .logo {
         font-size: 50px;
     }
@@ -1204,29 +1228,7 @@ footer>div {
     }
 }
 
-@media (max-width: 760px) {
-    
-    .questions {
-        height: auto;
-        padding: 40px 0px 40px 0px;
-    }
-
-    .question_blocks {
-        flex-direction: column;
-    }  
-    
-    .question_list:not(.question_list:last-of-type) {
-        border-right: unset;
-    }
-    
-
-    .question_list>div {
-        margin-bottom: 10px;
-    }
-}
-
 @media (max-width: 460px) {
-
     .customers_photo>img:first-of-type, .customers_photo>img:last-of-type {
         display: none;
     }
