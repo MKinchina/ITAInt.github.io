@@ -1072,14 +1072,6 @@ footer>div {
         display: none;
     }
 
-    .info {
-        min-height: 5vmax;
-    }
-
-    .menu {
-        min-height: 5vmax;
-    }
-
     .main_contacts {
         justify-content: space-evenly;
         width: 40%;
@@ -1202,20 +1194,6 @@ footer>div {
     }
 }
 
-@media screen and (max-width: 326px) {
-    .logo {
-        font-size: 50px;
-    }
-
-    .text_about>h3, .first_line {
-       font-size: 30px;
-    }   
-
-    .second_line>h1 {
-        font-size: 40px;
-    }
-}
-
 @media (max-width: 1000px) {
     .service_block {
         flex-wrap: wrap;
@@ -1240,7 +1218,19 @@ footer>div {
 
     .main_photo {
         transform: translate(0%, 30%);
-    }       
+    } 
+    
+    .logo {
+        font-size: 50px;
+    }
+
+    .text_about>h3, .first_line {
+       font-size: 30px;
+    }   
+
+    .second_line>h1 {
+        font-size: 40px;
+    }
 }
 
 @media (max-width:530px) {
