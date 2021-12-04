@@ -1025,9 +1025,12 @@ footer>div {
     margin-bottom: 5px;
 }
 
-.services_links>li::before, .useful_links>li::before {
+.services_links>li::marker, .useful_links>li::marker {
     content: '\2B9E';
-    padding-right: 10px;
+}
+
+.services_links>li, .useful_links>li {
+    padding-left: 10px;
 }
 
 .services_links>li:hover, .useful_links>li:hover {
