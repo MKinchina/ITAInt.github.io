@@ -35,13 +35,13 @@ header {
     justify-content: space-around;
     align-items: center;
     background-color: rgb(253, 191, 48);
-    width: 100%;
-    height: 20%;
+    width: 100vw;
+    height: 20vh;
 }
 
 .info {
-    width: 90%;
-    height: 50%;
+    width: 90vw;
+    height: 10vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -444,7 +444,6 @@ Start of the third section */
 }
 
 .main_about {
-    min-height: 80%;
     width: 90%;
     display: flex;
     justify-content: space-evenly;
@@ -453,7 +452,6 @@ Start of the third section */
 
 .main_about>img {
     max-height: 500px;
-    max-width: 40%;
     padding-right: 20px;
     display: block;
 }
@@ -1204,7 +1202,7 @@ footer>div {
 }
 
 .services_links>li::before, .useful_links>li::before {
-    content: '⮞';
+    content: '\2B9E';
     padding-right: 10px;
 }
 
